@@ -31,10 +31,10 @@ $$
 $$
 
 where:
-- \( \text{fc}_1(h) \) applies a linear transformation to the encoder states.
-- \( \text{fc}_2(s) \) applies a linear transformation to the decoder state.
-- The **tanh** activation function introduces non-linearity.
-- \( \text{fc}_3 \) maps the combined representation to a final similarity score.
+- `fc₁(h)` applies a linear transformation to the encoder states.
+- `fc₂(s)` applies a linear transformation to the decoder state.
+- The `tanh` activation function introduces non-linearity.
+- `fc₃` maps the combined representation to a final similarity score.
 
 
 This approach allows the model to learn more complex similarity patterns beyond a simple dot product.
