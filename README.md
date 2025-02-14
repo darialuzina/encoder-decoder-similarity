@@ -12,16 +12,17 @@ Similarity computation is essential in sequence-to-sequence models, particularly
 ## Similarity Functions
 
 ### **Similarity1**
-The similarity function in `Similarity1` is based on the dot product:
+The similarity function in `Similarity1` is computed using the dot product:
 
 \[
-\text{sim}(h, s) = h^T s = \sum h_i s_i
+\text{sim}(h, s) = h^T s = \sum_{i} h_i s_i
 \]
 
 where:
-- \( h \) represents encoder states.
+- \( h \) represents the encoder states.
 - \( s \) is the decoder state.
 - The dot product measures alignment between these vectors.
+
 
 ### **Similarity2**
 The similarity function in `Similarity2` is defined as:
