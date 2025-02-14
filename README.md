@@ -26,18 +26,18 @@ where:
 
 
 ### **Similarity2**
-The similarity function in `Similarity2` is defined as:
+The similarity function in `Similarity2` introduces **linear transformations and non-linearity**:
 
-\[
-\text{sim}(h, s) = \text{fc}_3 (\tanh(\text{fc}_1(h) + \text{fc}_2(s)))
-\]
+$$
+\text{sim}(h, s) = \text{fc}_3 \left(\tanh\left(\text{fc}_1(h) + \text{fc}_2(s)\right)\right)
+$$
 
 where:
-- \( \text{fc}_1 \) and \( \text{fc}_2 \) are linear transformations that project the encoder and decoder states into an intermediate representation.
+- \( \text{fc}_1 \) and \( \text{fc}_2 \) are **fully connected layers** that project the encoder and decoder states into an intermediate representation.
 - The **tanh** activation introduces non-linearity.
-- \( \text{fc}_3 \) maps the combined representation to a final similarity score.
+- \( \text{fc}_3 \) maps the **combined representation** to a final similarity score.
 
-This approach allows for more flexibility in learning complex similarity patterns.
+This approach allows the model to learn more complex similarity patterns beyond a simple dot product.
 
 ## Applications
 
