@@ -19,8 +19,8 @@ $$
 $$
 
 where:
-- \( h \) represents the encoder states.
-- \( s \) is the decoder state.
+- `h` represents the encoder states.
+- `s` is the decoder state.
 - The dot product measures alignment between these vectors.
 
 ### **Similarity2**
