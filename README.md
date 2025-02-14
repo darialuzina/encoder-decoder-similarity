@@ -19,11 +19,15 @@ $$
 $$
 
 where:
-- \( h \) represents the encoder states.
-- \( s \) is the decoder state.
-- The dot product measures alignment between these vectors.
-
-
+$$
+h \text{ represents the encoder states}
+$$
+$$
+s \text{ is the decoder state}
+$$
+$$
+h^T s \text{ measures alignment between these vectors}
+$$
 
 ### **Similarity2**
 The similarity function in `Similarity2` introduces **linear transformations and non-linearity**:
@@ -33,9 +37,17 @@ $$
 $$
 
 where:
-- \( \text{fc}_1 \) and \( \text{fc}_2 \) are **fully connected layers** that project the encoder and decoder states into an intermediate representation.
-- The **tanh** activation introduces non-linearity.
-- \( \text{fc}_3 \) maps the **combined representation** to a final similarity score.
+$$
+\text{fc}_1 \text{ and } \text{fc}_2 \text{ are fully connected layers that project the encoder and decoder states into an intermediate representation.}
+$$
+
+$$
+\tanh \text{ is the activation function that introduces non-linearity.}
+$$
+
+$$
+\text{fc}_3 \text{ maps the combined representation to a final similarity score.}
+$$
 
 This approach allows the model to learn more complex similarity patterns beyond a simple dot product.
 
